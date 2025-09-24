@@ -19,6 +19,9 @@ document.addEventListener('DOMContentLoaded', function () {
 	// мультивыбор направлений
 	const twoStep = { selectedCats: new Set() }
 
+	const toPage = name =>
+		location.pathname.includes('/pages/') ? name : `pages/${name}`
+
 	// ================== DOM ==================
 	const showResultsContainer = document.getElementById('show-results-container')
 	const showResultsBtn = document.getElementById('show-results-btn')
@@ -313,7 +316,7 @@ document.addEventListener('DOMContentLoaded', function () {
 							m.name || ''
 					  }" class="w-full h-32 object-cover">`
 
-				const href = `pages/detail.html?purpose=${encodeURIComponent(
+				const href = `${toPage('detail.html')}?purpose=${encodeURIComponent(
 					m._purpose || 'land'
 				)}&id=${encodeURIComponent(m.id)}`
 				const area = Number.isFinite(m.area)
@@ -535,7 +538,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		const params = new URLSearchParams()
 		names.forEach(n => params.append('suitableFor', n))
-		window.location.href = `./pages/list.html?${params.toString()}`
+		window.location.href = `${toPage('list.html')}?${params.toString()}`
 	})
 
 	// ================== init ==================
