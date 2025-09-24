@@ -392,7 +392,8 @@ var dataByPurpose = {
 			place: 'Бестужевская',
 			coordinates: [59.986111, 30.368838],
 			images: [
-				'../img/collage_final.jpg',
+				// '../img/collage_final.jpg',
+				'https://vladimirmakarof.github.io/RentEstate/img/collage_final.jpg',
 				'https://00.img.avito.st/image/1/1.azT43ba5x93OakXQosRff4x8xdtGfEXLznHF30pow98.xwLL--AQhFyteFjO3UTo13uxYYBlP-0BKjulVYLRWkY?cqp=2.u3NCSNufGJscbkbcTnB31iWF9mNdkZV17CfHaAg72eFO7oRH9LnvmRn80XUuwm6DChCt8IaEfKU2EJELfVQEoXVU2aPjLQ==',
 				'https://90.img.avito.st/image/1/1.cEnqJLa53KDck16thjlcBcOF3qZUhV623IjeoliR2KI.CTlUhQXZ0xZUlyZ-FiDr4ervUMt2l43cZXz4ZDXoDio',
 				'https://90.img.avito.st/image/1/1.jmERyLa5Iognf6CFAYK8fRZpII6vaaCeJ2QgiqN9Joo.G1ECs2X3i0bEa-ULdTk7eHJoXmam2HYY1Xh9ESWjHLA',
